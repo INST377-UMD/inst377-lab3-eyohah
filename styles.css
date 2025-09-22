@@ -1,7 +1,7 @@
-/* Custom font-family for the whole body (you choose) */
+
 :root{
-  --page-bg: #f5efe6;            /* warm paper */
-  --bar-bg: linear-gradient(90deg,#1f2937,#374151); /* header/footer distinct color */
+  --page-bg: #f5efe6; 
+  --bar-bg: linear-gradient(90deg,#1f2937,#374151);
   --bar-text: #f9fafb;
   --pill-bg: #ffffff20;
   --pill-hover: #ffffff55;
@@ -50,7 +50,7 @@ body{
 .nav a:hover{ background: var(--pill-hover); }
 .nav a:active{ transform: translateY(1px); }
 
-/* Card look reused by main & sidebar */
+
 .card{
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -60,10 +60,10 @@ body{
   margin: 8px 12px;     /* margin requirement */
 }
 
-/* Layout: keep main + sidebar in one line (grid) */
+/* Layout: keep main + sidebar in one line */
 .layout{
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); /* percentage-ish via fr units */
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
   gap: 20px;
   padding: 8px 12px 20px;
   align-items: start;

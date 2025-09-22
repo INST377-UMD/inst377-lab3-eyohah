@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 3 – Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header + Footer use the same class "bar" -->
+  <header class="bar">
+    <h1>Lab 3 – Rock Paper Scissors</h1>
+
+    <!-- pill nav, horizontal, no bullets -->
+    <nav aria-label="Primary">
+      <ul class="nav nav-pills">
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Click Here!</a></li>
+        <li><a href="https://apple.com/" target="_blank" rel="noopener">Apple</a></li>
+        <li><a href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener">Wordle</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main + sidebar on one line using CSS Grid -->
+  <div class="layout">
+    <main class="card main">
+      <h2>Make your choice</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your name" />
+
+        <label for="choice">Your Choice</label>
+        <select id="choice" name="choice">
+          <option>Rock</option>
+          <option>Paper</option>
+          <option>Scissors</option>
+        </select>
+
+        <button type="submit">Play</button>
+      </form>
+    </main>
+
+    <aside class="card sidebar" aria-label="Rules">
+      <h3>How to Play</h3>
+      <p>Pick Rock, Paper, or Scissors. Compare with opponent:</p>
+      <ul>
+        <li>Rock beats Scissors</li>
+        <li>Scissors beat Paper</li>
+        <li>Paper beats Rock</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="bar">
+    <small>Hello! Is is the footer?</small>
+  </footer>
+</body>
+</html>
